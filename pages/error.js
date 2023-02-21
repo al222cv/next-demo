@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const error = () => {
-  return <p>This is an page with errors {lol}</p>
+  useEffect(() => {
+    throw new Error('Lol')
+  }, [])
+  return <p>This is an page with errors</p>
 }
 
 export default error

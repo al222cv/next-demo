@@ -30,6 +30,9 @@ export default function Home () {
       <br />
       <br />
       <Link href={'/api/brands'}>Json API endpoint</Link>
+      <br />
+      <br />
+      <Link href={'/error'}>Error page</Link>
     </>
   )
 }

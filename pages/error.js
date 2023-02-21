@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 
-const error = () => {
+const ErrorPage = () => {
   useEffect(() => {
     throw new Error('Lol')
   }, [])
   return <p>This is an page with errors</p>
 }
 
-export default error
+export default ErrorPage

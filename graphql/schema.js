@@ -1,7 +1,6 @@
 import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 import { gql } from 'apollo-server-micro'
-import data from '../data/brands'
 
 const brandType = gql`
   type Brand {
@@ -16,7 +15,17 @@ const brandType = gql`
 const brandResolvers = {
   Query: {
     brands: async () => {
-      return data
+      return [
+        {
+          name: 'Line'
+        },
+        {
+          name: 'Dynastar'
+        },
+        {
+          name: 'Salomon'
+        }
+      ]
     }
   }
 }

@@ -34,7 +34,7 @@ const SpaGraphQl = () => {
           }
         `
       })
-      setBrands(res)
+      setBrands(res.data.brands)
     }
     getBrands()
   }, [])

@@ -23,7 +23,7 @@ export default function Home () {
       <Link href={'/spa'}>SPA page</Link>
       <br />
       <br />
-      <Link href={'/spa'}>SPA page graphql</Link>
+      <Link href={'/spagraphql'}>SPA page graphql</Link>
       <br />
       <br />
       <Link href={'/env'}>Env</Link>

@@ -1,9 +1,18 @@
 import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 import { gql } from 'apollo-server-micro'
-import { log } from 'next-axiom'
 
 const brandType = gql`
+  type Brand {
+    name: String!
+  }
+
+  type Query {
+    brands: [Brand]
+  }
+`
+
+const lolType = gql`
   type Brand {
     name: String!
   }
@@ -16,7 +25,7 @@ const brandType = gql`
 const brandResolvers = {
   Query: {
     brands: async () => {
-      log.debug('Graphql brands')
+      console.debug('Graphql brands')
       return [
         {
           name: 'Line'

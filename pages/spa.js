@@ -7,7 +7,7 @@ const Spa = () => {
     const getBrands = async () => {
       const res = await fetch('/api/brands')
       const json = await res.json()
-
+      console.log('Getting brands')
       setBrands(json)
     }
 

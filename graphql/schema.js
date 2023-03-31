@@ -25,7 +25,7 @@ const lolType = gql`
 const brandResolvers = {
   Query: {
     brands: async () => {
-      console.debug('Graphql brands')
+      console.log('Graphql brands')
       return [
         {
           name: 'Line'

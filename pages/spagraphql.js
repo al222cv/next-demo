@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  gql
-} from '@apollo/client'
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client'
 
 let baseUri = process.env.VERCEL_URL
 

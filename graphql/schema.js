@@ -1,18 +1,8 @@
 import { mergeTypeDefs, mergeResolvers } from '@graphql-tools/merge'
 import { makeExecutableSchema } from '@graphql-tools/schema'
-import { gql } from 'apollo-server-micro'
+import { gql } from 'graphql-tag'
 
 const brandType = gql`
-  type Brand {
-    name: String!
-  }
-
-  type Query {
-    brands: [Brand]
-  }
-`
-
-const lolType = gql`
   type Brand {
     name: String!
   }

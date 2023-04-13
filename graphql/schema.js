@@ -12,22 +12,24 @@ const brandType = gql`
   }
 `
 
+export const getBrands = async () => {
+  console.log('Graphql brands')
+  return [
+    {
+      name: 'Line'
+    },
+    {
+      name: 'Dynastar'
+    },
+    {
+      name: 'Salomon'
+    }
+  ]
+}
+
 const brandResolvers = {
   Query: {
-    brands: async () => {
-      console.log('Graphql brands')
-      return [
-        {
-          name: 'Line'
-        },
-        {
-          name: 'Dynastar'
-        },
-        {
-          name: 'Salomon'
-        }
-      ]
-    }
+    brands: getBrands
   }
 }
 

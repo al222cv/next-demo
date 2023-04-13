@@ -4,7 +4,9 @@ import Link from 'next/link'
 export default function App ({ Component, pageProps }) {
   return (
     <>
-      <Link href={'/'}>Back to start</Link>
+      <p>
+        <Link href={'/'}>Back to start</Link>
+      </p>
       <Component {...pageProps} />
     </>
   )

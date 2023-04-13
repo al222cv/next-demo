@@ -14,6 +14,6 @@ describe('getBrands', () => {
 
   it('should return an array of brands with length 3', async () => {
     const brands = await getBrands()
-    expect(brands).toHaveLength(4)
+    expect(brands).toHaveLength(3)
   })
 })

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Env = ({ env }) => (
-  <p>
+  <p data-testid='text'>
     This page presents an env variable, should be different based on
     environment: {env}.
   </p>

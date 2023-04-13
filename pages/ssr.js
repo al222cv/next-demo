@@ -1,7 +1,9 @@
 import React from 'react'
 
 const Ssr = ({ data }) => (
-  <p>This is a server side rendered page with faked dynamic data: {data} </p>
+  <p data-testid='text'>
+    This is a server side rendered page with faked dynamic data: {data}{' '}
+  </p>
 )
 
 export async function getServerSideProps () {

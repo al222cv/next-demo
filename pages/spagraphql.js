@@ -36,7 +36,9 @@ const SpaGraphQl = () => {
 
   return (
     <>
-      <p>This page loads data like a classic SPA (on the client): </p>
+      <p data-testid='text'>
+        This page loads data like a classic SPA (on the client):{' '}
+      </p>
       {brands.map(b => (
         <p key={b.name}>{b.name}</p>
       ))}
